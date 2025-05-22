@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+}
+.titulo1{
+    text-align: left;
+    color: antiquewhite;
+}
+.conteudo{
+    text-align: center;
+    color:antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 200px;
+}
+

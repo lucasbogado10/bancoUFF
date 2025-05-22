@@ -1,0 +1,3 @@
+html:5 + enter: cria o esqueleto do documento
+tag strong: usada para deixar textos em negrito no HTML 
+tag em: usada oara deixar textos em itálico no HTML
