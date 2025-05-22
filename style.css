@@ -1,14 +1,116 @@
-body{
-    background-color: black;
-}
-.titulo1{
-    text-align: left;
-    color: antiquewhite;
-}
-.conteudo{
-    text-align: center;
-    color:antiquewhite;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 200px;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-image: url(fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    /* ALTERAÇÃO AQUI: */
+    justify-content: flex-start; /* Alinha o conteúdo ao topo do body */
+    padding-top: 50px; /* Adiciona um espaço do topo para não ficar "colado" demais */
+    /* FIM DA ALTERAÇÃO */
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
+/* Overlay para contraste */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* --- ESTILOS DO CABECALHO E LOGO --- */
+.cabecalho-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    margin-bottom: 10px; /* Espaço entre a logo e o formulário */
+}
+
+.logo-imagem {
+    display: block;
+    margin: 0;
+    max-width: 250px; /* Tamanho da logo */
+    height: auto;
+}
+
+/**/
+/* Redefine algumas margens padrão para controle total do espaçamento */
+h2, p, form {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.conteudo {
+    text-align: center;
+    color: rgb(30, 29, 38);
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+/*
+/* Estilos para os inputs do formulário */
+.formulario input[type="text"],
+.formulario input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.formulario br {
+    display: none;
+}
+
+.formulario input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+.conteudo p {
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.conteudo a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 20px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.conteudo a:hover {
+    background-color: #003d80;
+}
