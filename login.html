@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_login_cadastro.css">
     <title>login</title>
 </head>
 <body>
@@ -13,17 +13,19 @@
     <div class="conteudo">
         <h2>Faça o seu login na plataforma</h2>
             <br>
-        <form class="formulario" action="get">
-            Usuário <input type="text">
-            <br>
-            <br>
-            Senha <input type="password">
-            <br>
-            <br>
-            Deseja manter-se conectado? <input type="checkbox">
+        <form class="formulario" action="pagPrincipal.html" method="get">  <!--alterar o action e adc metodo get, tanto no login quanto no cadastro' -->
+            Usuário <input type="text" required>
+            Senha <input type="password" required>
+            <label>
+                Deseja manter-se conectado? <input type="checkbox" name="manter_conectado">
+            </label>
+            <input type="submit" value="Login">
         </form>   
         <p>Caso não possua login, cadastre-se clicando no botão abaixo</p>
-        <a href="cadastro.html">Cadastro</a>
+        <form action="cadastro.html" method="get">
+            <input type="submit" value="Cadastro">
+        </form>
     </div>
 </body>
 </html>
+

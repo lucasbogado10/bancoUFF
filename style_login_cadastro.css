@@ -33,7 +33,7 @@ body::before {
 }
 
 /* --- ESTILOS DO CABECALHO E LOGO --- */
-.cabecalho-logo {
+.cabecalho_logo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,8 +76,8 @@ h2, p, form {
 }
 /*
 /* Estilos para os inputs do formulário */
-.formulario input[type="text"],
-.formulario input[type="password"] {
+.formulario input[type="text"], /*fazer outro para o formulario da pagina de cadastro*/
+.formulario input[type="password"]{
     width: calc(100% - 20px);
     padding: 8px;
     margin-top: 8px;
@@ -99,18 +99,27 @@ h2, p, form {
     line-height: 1.5;
 }
 
-.conteudo a {
+input[type="submit"] {
     display: inline-block;
     margin-top: 8px;
     padding: 8px 20px;
     background-color: #0056b3;
     color: white;
-    text-decoration: none;
+    border: none;
     border-radius: 5px;
     font-weight: bold;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.conteudo a:hover {
+input[type="submit"]:hover {
     background-color: #003d80;
 }
+
+.conteudo h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: rgb(30, 29, 38);
+}
+
